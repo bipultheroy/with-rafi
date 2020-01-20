@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+    <title>Admin | Give your best</title>
+    <meta name=”description” content="App maintenance and important tasks here.">
+    <meta name="robots" content="onindex, nofollow">
+    <!--Favicon for windows and IE-->
+    <meta name="msapplication-TileColor" content="#00e000">
+    <meta name="theme-color" content="#00e000">
+
+    <link rel="canonical" href="https://formayes.com"/>
+
+    <!--TODO - place Favicon inside root folder-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#00e000">
+
+  <link href="src/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="src/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.comcss?family=Roboto:100,400,500,700&display=swap" rel="stylesheet">
+  <link href="fonts/LineIcons/LineIcons.min.css" rel="stylesheet">
+
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+  <link href="css/order_list.css" rel="stylesheet">
+
+</head>
+
+<body>
+<div class="d-flex" id="bodyWrapper">
+
+    <!-- Sidebar -->
+    <div class="border-right" id="sidebarWrapper">
+        <div class="sidebar-heading ">
+            <a class="app-link-style-default txt-bold color-app-default-green" href="https://formayes.com/">Formayes.com</a>
+        </div>
+        <div class="nav flex-column nav-pills" id="sidebarMenu" role="tablist" aria-orientation="vertical">
+
+
+            <a class="nav-link rounded-0 d-flex w-100 justify-content-between align-items-center" id="dashboard-tab" data-toggle="pill" href="#dashboard" role="tab" aria-controls="dashboard" aria-selected="true">
+
+                <span><i class="lni-dashboard size-sm mr-3"></i>Dashboard</span><i class="lni-chevron-right ml-auto"></i>
+
+            </a>
+
+
+            <a class="nav-link rounded-0 d-flex w-100 justify-content-between align-items-center" data-toggle="collapse" href="#orderSubmenu" role="button" aria-expanded="false" aria-controls="orderSubmenu">
+            <span><i class="lni-cart-full size-sm  align-middle mr-3"></i>Orders</span><i class="lni-chevron-right ml-auto"></i>
+          </a>
+            <div class="sub-menu collapse" id="orderSubmenu" aria-expanded="false">
+
+                <div class="nav flex-column nav-pills" id="v-pills-order-tab" role="tablist" aria-orientation="vertical">
+
+                    <a class="nav-link rounded-0" id="v-pills-order-new-tab" data-toggle="pill" href="#v-pills-order-new" role="tab" aria-controls="v-pills-order-new" aria-selected="true">
+                      <span class="pl-5">New</span>
+                    </a>
+
+                    <a class="nav-link rounded-0" id="v-pills-order-completed-tab" data-toggle="pill" href="#v-pills-order-completed" role="tab" aria-controls="v-pills-order-completed" aria-selected="false">
+                        <span class="pl-5">Completed</span>
+                    </a>
+
+                </div>
+            </div>
+
+
+            <a class="nav-link rounded-0 d-flex w-100 justify-content-between align-items-center" data-toggle="collapse" href="#cardSubmenu" role="button" aria-expanded="false" aria-controls="cardSubmenu">
+                <span><i class="lni-credit-cards size-sm mr-3"></i>Card</span><i class="lni-chevron-right ml-auto"></i>
+            </a>
+
+            <div class="sub-menu collapse" id="cardSubmenu" aria-expanded="false">
+
+
+                <div class="nav flex-column nav-pills" id="v-pills-card-tab" role="tablist" aria-orientation="vertical">
+
+                    <a class="nav-link rounded-0" id="v-pills-card-recharge-tab" data-toggle="pill" href="#v-pills-card-recharge" role="tab" aria-controls="v-pills-card-recharge" aria-selected="false">
+                        <span class="pl-5">New</span>
+                    </a>
+
+                    <a class="nav-link rounded-0" id="v-pills-card-history-tab" data-toggle="pill" href="#v-pills-card-history" role="tab" aria-controls="v-pills-card-history" aria-selected="false">
+                        <span class="pl-5">History</span>
+                    </a>
+                </div>
+
+
+            </div>
+          
+          
+        
+
+            <a class="nav-link rounded-0 d-flex w-100 justify-content-between align-items-center" data-toggle="collapse" href="#productSubmenu" role="button" aria-expanded="false" aria-controls="productSubmenu">
+
+                <span><i class="lni-package size-sm mr-3"></i>Products</span><i class="lni-chevron-right ml-auto"></i>
+
+            </a>
+            <div class="sub-menu collapse" id="productSubmenu" aria-expanded="false">
+                <div class="nav flex-column nav-pills" id="v-pills-product-tab" role="tablist" aria-orientation="vertical">
+
+                    <a class="nav-link rounded-0" id="v-pills-product-new-tab" data-toggle="pill" href="#v-pills-product-new" role="tab" aria-controls="v-pills-product-new" aria-selected="false">
+                        <span class="pl-5">New</span>
+                    </a>
+
+                    <a class="nav-link rounded-0" id="v-pills-product-available-tab" data-toggle="pill" href="#v-pills-product-available" role="tab" aria-controls="v-pills-product-available" aria-selected="false">
+                        <span class="pl-5">Available</span>
+                    </a>
+                </div>
+            </div>
+          
+          
+
+            <a class="nav-link rounded-0 d-flex w-100 justify-content-between align-items-center" data-toggle="collapse" href="#ideaSubmenu" role="button" aria-expanded="false" aria-controls="ideaSubmenu">
+
+
+                <span><i class="lni-bulb size-sm mr-3"></i>Ideas</span><i class="lni-chevron-right ml-auto"></i>
+
+
+            </a>
+            <a class="nav-link rounded-0 d-flex w-100 justify-content-between align-items-center" data-toggle="collapse" href="#providerSubmenu" role="button" aria-expanded="false" aria-controls="providerSubmenu">
+
+                <span><i class="lni-network size-sm mr-3"></i>Provider</span><i class="lni-chevron-right ml-auto"></i>
+
+            </a>
+            <a class="nav-link rounded-0 d-flex w-100 justify-content-between align-items-center" data-toggle="collapse" href="#ReportSubmenu" role="button" aria-expanded="false" aria-controls="reportSubmenu">
+
+                <span><i class="lni-flag size-sm mr-3"></i>Report</span><i class="lni-chevron-right ml-auto"></i>
+
+
+            </a>
+            <a class="nav-link rounded-0 d-flex w-100 justify-content-between align-items-center" data-toggle="collapse" href="#feedbackSubmenu" role="button" aria-expanded="false" aria-controls="feedbackSubmenu">
+
+                <span><i class="lni-emoji-smile size-sm mr-3"></i>Feedback</span><i class="lni-chevron-right ml-auto"></i>
+
+            </a>
+            <a class="nav-link rounded-0 d-flex w-100 justify-content-between align-items-center" data-toggle="collapse" href="#businessSubmenu" role="button" aria-expanded="false" aria-controls="businessSubmenu">
+
+                <span><i class="lni-handshake size-sm mr-3"></i>Business</span><i class="lni-chevron-right ml-auto"></i>
+
+            </a>
+
+
+        </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="pageContentContainer">
+
+        <nav class="navbar navbar-expand-lg app-navbar-default border-bottom">
+            <a  class="app-link-style-default"  id="menuToggle" href="#"><i class="lni-arrow-left size-md" id="menuToggleIcon"></i></a>
+        </nav>
+
+
+
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <div class="tab-content page-contents-wrapper"  id="v-pills-tabContent">
+
+
+
+
+                        <div  class="tab-pane fade" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+                            <div class="card">
+                                <div class="card-header card-header-custom-default">
+                                    Welcome!
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Dashboard</h5>
+                                </div>
+                                <div class="card-footer card-footer-custom-default text-center">
+                                    <button class="btn btn-success">Load more</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div  class="tab-pane fade" id="v-pills-order-new" role="tabpanel" aria-labelledby="v-pills-order-new-tab">
+
+                            <div class="card">
+
+                                <div class="card-header card-header-custom-default">
+                                    <form method="post" id="newOrderSearch">
+
+                                        <div class="form-row">
+
+                                            <div class="form-group col-3 col-sm-2">
+                                                <label class="sr-only" for="newOrderScheduleFilter">Filter by schedule</label>
+                                                <select id="newOrderScheduleFilter" class="form-control">
+                                                    <option selected>Morning</option>
+                                                    <option>Evening</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group col-9 offset-sm-4 col-sm-6">
+                                                <label class="sr-only" for="searchNewOrderInput">Search order</label>
+                                                <input type="text" class="form-control search-input" id="searchNewOrderInput" placeholder="Enter order id or date...">
+                                                <span class="search-icon"><i class="lni-magnifier size-sm"></i></span>
+                                            </div>
+
+
+                                        </div>
+
+                                    </form>
+                                </div>
+
+
+                                <div class="card-body pt-0 pb-0">
+
+                                    <div class="all-order-container">
+
+                                        <div class="order-container data-id-container border-0" data-orderid="123">
+
+                                            <a class="app-link-style-default txt-bold order-link d-flex w-100 justify-content-between align-items-center"
+                                               data-toggle="collapse" href="#order123" role="button" aria-expanded="false" aria-controls="order123">
+                                                <span>M34448</span> <i class="lni-chevron-right"></i>
+                                            </a>
+
+                                            <div class="order-content-wrapper collapse" id="order123" aria-expanded="false">
+
+                                                <div class="order-list-wrapper">
+
+                                                    <div class="order-list-item data-id-container" data-productid="232323">
+
+                                                        <div class="dropdown list-item-option">
+                                                            <a href="#" class="dropdown-toggle rotate-90 more-option-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                                <i class="lni-more-alt"></i>
+                                                            </a>
+                                                            <div class="dropdown-menu dropdown-menu-right">
+                                                                <a class="dropdown-item" href="#"><i class="lni-share-alt mr-2"></i> Out of stock</a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="media ">
+
+                                                            <div class="align-self-center mr-3">
+                                                                <a class="img-bg list-item-img-bg" href="#productDetailModal" data-toggle="modal">
+                                                                    <img class="media-object list-item-img" src="images/product/Turmeric.jpg" alt="Turmeric powder">
+                                                                </a>
+                                                            </div>
+
+                                                            <div class="media-body">
+                                                                <div class="inline-block-margin-fix mt-0 mb-0">
+                                                                    <a class="app-link-style-default list-item-title txt-overflow-ellipsis product-name" href="#productDetailModal" data-toggle="modal" title="Click to see details">Turmeric</a>
+                                                                    <div class="list-item-subtitle txt-dim txt-sm txt-overflow-ellipsis sales-num">500 sales</div>
+                                                                    <div class="list-item-subtitle txt-dim txt-sm txt-overflow-ellipsis selected-variant">Flavour - Non-flavoured</div>
+                                                                    <div class="list-item-subtitle txt-dim txt-sm txt-overflow-ellipsis quantity" data-itemweight=".01">Quantity - 100g</div>
+                                                                    <div class="txt-overflow-ellipsis list-item-price-txt" data-itemprice="200">৳200</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="order-list-item data-id-container" data-productid="565675">
+
+                                                        <div class="dropdown list-item-option">
+                                                            <a href="#" class="dropdown-toggle rotate-90 more-option-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                                <i class="lni-more-alt"></i>
+                                                            </a>
+                                                            <div class="dropdown-menu dropdown-menu-right">
+                                                                <a class="dropdown-item" href="#"><i class="lni-share-alt mr-2"></i> Out of stock</a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="media ">
+
+                                                            <div class="align-self-center mr-3">
+                                                                <a class="img-bg list-item-img-bg" href="#productDetailModal" data-toggle="modal">
+                                                                    <img class="media-object list-item-img" src="images/product/capsicum.jpg" alt="Capsicum">
+                                                                </a>
+                                                            </div>
+
+                                                            <div class="media-body">
+                                                                <div class="inline-block-margin-fix mt-0 mb-0">
+                                                                    <a class="app-link-style-default list-item-title txt-overflow-ellipsis product-name" href="#productDetailModal" data-toggle="modal" title="Click to see details">Capsicum</a>
+                                                                    <div class="list-item-subtitle txt-dim txt-sm txt-overflow-ellipsis sales-num">1500 sales</div>
+                                                                    <div class="list-item-subtitle txt-dim txt-sm txt-overflow-ellipsis selected-variant">Color - Green</div>
+                                                                    <div class="list-item-subtitle txt-dim txt-sm txt-overflow-ellipsis quantity" data-itemweight=".01">Quantity - 250g</div>
+                                                                    <div class="txt-overflow-ellipsis list-item-price-txt" data-itemprice="200">৳100</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="ready-btn-container clearfix">
+                                                        <button type="button" class="btn btn-success float-right">Order ready</button>
+                                                    </div>
+
+                                                    <div class="row">
+
+                                                        <div class="col-12 col-sm-4">
+                                                            <div class="order-address-info-container">
+                                                                <div class="section-title">Address</div>
+                                                                <div class="order-address-info">
+                                                                    <span>501, House - 19</span>
+                                                                    <span>Road - 19</span>
+                                                                    <span>Nikunja-1, Khilkhet</span>
+                                                                    <span>Dhaka - 1229</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12 col-sm-4">
+
+                                                            <div class="order-contact-info-container">
+                                                                <div class="section-title">Contact</div>
+                                                                <div class="order-contact-info">
+                                                                    <span>Samira hossain</span>
+                                                                    <span>0176329348</span>
+                                                                    <span>Lokman Habib</span>
+                                                                    <span>0168938477</span>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="col-12 col-sm-4">
+                                                            <div class="order-payment-info-container">
+                                                                <div class="section-title">Total payment</div>
+                                                                <div class="order-payment-info">
+                                                                    <span class="order-total-txt">৳300.00</span>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="clearfix">
+
+                                                        <form class="form-inline order-verification-form float-right pb-4 pt-4">
+                                                            <div class="form-group mx-sm-4">
+                                                                <input type="text" class="form-control" placeholder="Verification code">
+                                                            </div>
+                                                            <button type="submit" class="btn btn-success">Delivered</button>
+                                                        </form>
+
+                                                    </div>
+
+
+                                                </div>
+
+
+                                                
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="card-footer card-footer-custom-default text-center">
+                                    <button class="btn btn-success">Load more</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div  class="tab-pane fade" id="v-pills-order-completed" role="tabpanel" aria-labelledby="v-pills-order-completed-tab">
+
+                            <div class="card">
+
+                                <div class="card-header card-header-custom-default">
+                                    <form method="post" id="completedOrderSearch">
+
+                                        <div class="form-row">
+
+                                            <div class="form-group col-3 col-sm-2">
+                                                <label class="sr-only" for="completedOrderScheduleFilter">Filter by schedule</label>
+                                                <select id="completedOrderScheduleFilter" class="form-control">
+                                                    <option selected>Morning</option>
+                                                    <option>Evening</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group col-9 offset-sm-4 col-sm-6">
+                                                <label class="sr-only" for="searchCompletedOrderInput">Search order</label>
+                                                <input type="text" class="form-control search-input" id="searchCompletedOrderInput" placeholder="Enter order id or date...">
+                                                <span class="search-icon"><i class="lni-magnifier size-sm"></i></span>
+                                            </div>
+
+
+                                        </div>
+
+                                    </form>
+                                </div>
+
+
+                                <div class="card-body pt-0 pb-0">
+
+                                    <div class="all-order-container">
+
+                                        <div class="order-container data-id-container border-0" data-orderid="458778">
+
+                                            <a class="app-link-style-default txt-bold order-link d-flex w-100 justify-content-between align-items-center"
+                                               data-toggle="collapse" href="#order458778" role="button" aria-expanded="false" aria-controls="order458778">
+                                                <span>M34448</span> <i class="lni-chevron-right"></i>
+                                            </a>
+
+                                            <div class="order-content-wrapper collapse" id="order458778" aria-expanded="false">
+
+                                                <div class="order-list-wrapper">
+
+                                                    <div class="order-list-item data-id-container" data-productid="26723">
+
+                                                        <div class="dropdown list-item-option">
+                                                            <a href="#" class="dropdown-toggle rotate-90 more-option-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                                <i class="lni-more-alt"></i>
+                                                            </a>
+                                                            <div class="dropdown-menu dropdown-menu-right">
+                                                                <a class="dropdown-item" href="#"><i class="lni-share-alt mr-2"></i> Out of stock</a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="media ">
+
+                                                            <div class="align-self-center mr-3">
+                                                                <a class="img-bg list-item-img-bg" href="#productDetailModal" data-toggle="modal">
+                                                                    <img class="media-object list-item-img" src="images/product/Turmeric.jpg" alt="Turmeric powder">
+                                                                </a>
+                                                            </div>
+
+                                                            <div class="media-body">
+                                                                <div class="inline-block-margin-fix mt-0 mb-0">
+                                                                    <a class="app-link-style-default list-item-title txt-overflow-ellipsis product-name" href="#productDetailModal" data-toggle="modal" title="Click to see details">Turmeric</a>
+                                                                    <div class="list-item-subtitle txt-dim txt-sm txt-overflow-ellipsis sales-num">500 sales</div>
+                                                                    <div class="list-item-subtitle txt-dim txt-sm txt-overflow-ellipsis selected-variant">Flavour - Non-flavoured</div>
+                                                                    <div class="list-item-subtitle txt-dim txt-sm txt-overflow-ellipsis quantity" data-itemweight=".01">Quantity - 100g</div>
+                                                                    <div class="txt-overflow-ellipsis list-item-price-txt" data-itemprice="200">৳200</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="order-list-item data-id-container" data-productid="565655">
+
+                                                        <div class="dropdown list-item-option">
+                                                            <a href="#" class="dropdown-toggle rotate-90 more-option-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                                <i class="lni-more-alt"></i>
+                                                            </a>
+                                                            <div class="dropdown-menu dropdown-menu-right">
+                                                                <a class="dropdown-item" href="#"><i class="lni-share-alt mr-2"></i> Out of stock</a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="media ">
+
+                                                            <div class="align-self-center mr-3">
+                                                                <a class="img-bg list-item-img-bg" href="#productDetailModal" data-toggle="modal">
+                                                                    <img class="media-object list-item-img" src="images/product/capsicum.jpg" alt="Capsicum">
+                                                                </a>
+                                                            </div>
+
+                                                            <div class="media-body">
+                                                                <div class="inline-block-margin-fix mt-0 mb-0">
+                                                                    <a class="app-link-style-default list-item-title txt-overflow-ellipsis product-name" href="#productDetailModal" data-toggle="modal" title="Click to see details">Capsicum</a>
+                                                                    <div class="list-item-subtitle txt-dim txt-sm txt-overflow-ellipsis sales-num">1500 sales</div>
+                                                                    <div class="list-item-subtitle txt-dim txt-sm txt-overflow-ellipsis selected-variant">Color - Green</div>
+                                                                    <div class="list-item-subtitle txt-dim txt-sm txt-overflow-ellipsis quantity" data-itemweight=".01">Quantity - 250g</div>
+                                                                    <div class="txt-overflow-ellipsis list-item-price-txt" data-itemprice="200">৳100</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+
+                                                    <div class="row">
+
+                                                        <div class="col-12 col-sm-4">
+                                                            <div class="order-address-info-container">
+                                                                <div class="section-title">Address</div>
+                                                                <div class="order-address-info">
+                                                                    <span>501, House - 19</span>
+                                                                    <span>Road - 19</span>
+                                                                    <span>Nikunja-1, Khilkhet</span>
+                                                                    <span>Dhaka - 1229</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12 col-sm-4">
+
+                                                            <div class="order-contact-info">
+                                                                <div class="section-title">Contact</div>
+                                                                <div class="order-contact-info-container">
+                                                                    <span>Samira hossain</span>
+                                                                    <span>0176329348</span>
+                                                                    <span>Lokman Habib</span>
+                                                                    <span>0168938477</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12 col-sm-4">
+
+                                                            <div class="order-payment-info-container">
+                                                                <div class="section-title">Total payment</div>
+                                                                <div class="order-payment-info">
+                                                                    <span class="order-total-txt">৳300.00</span>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="clearfix">
+                                                        <div class="float-right color-app-default-green txt-sm">Delivered 12th jan 2020 at 10:30am</div>
+                                                    </div>
+
+                                                </div>
+
+
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="card-footer card-footer-custom-default text-center">
+                                    <button class="btn btn-success">Load more</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+
+                        <div  class="tab-pane fade" id="v-pills-card-recharge" role="tabpanel" aria-labelledby="v-pills-card-recharge-tab">
+
+                            <div class="card">
+
+                                <div class="card-header card-header-custom-default">
+                                   Recharge
+                                </div>
+
+
+                                <div class="card-body">
+
+                                    <div class="new-card-form-container">
+
+                                        <form method="post" id="new-card-form">
+
+                                            <div class="form-group pl-0 pr-0 col-8 clearfix">
+                                                <label class="sr-only" for="CardId"> Card ID</label>
+                                                <input type="number" class="form-control" id="CardId" placeholder="Card id">
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-4">
+                                                    <label class="sr-only" for="cardRechargeAmountInput">Recharge amount</label>
+                                                    <select id="cardRechargeAmountInput" class="form-control">
+                                                        <option selected>Select amount</option>
+                                                        <option>BDT 50</option>
+                                                        <option>BDT 100</option>
+                                                        <option>BDT 500</option>
+                                                        <option>BDT 1000</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="form-group col-4">
+                                                    <label class="sr-only" for="CardAuthCode"> Authentication code</label>
+                                                    <input type="password" class="form-control" id="CardAuthCode" placeholder="Authentication code">
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="col-8">
+                                                    <button type="submit" class="btn btn-success float-right" id="rechargeCardBtn">Recharge</button>
+                                                </div>
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </div>
+                                <div class="card-footer card-footer-custom-default text-center"></div>
+                            </div>
+
+                        </div>
+
+
+                        <div  class="tab-pane fade" id="v-pills-card-history" role="tabpanel" aria-labelledby="v-pills-card-history-tab">
+
+                            <div class="card">
+
+                                <div class="card-header card-header-custom-default">
+                                    <form method="post" id="cardHistorySearchForm">
+
+                                        <div class="form-row">
+
+                                            <div class="form-group col-3 col-sm-2">
+                                                <label class="sr-only" for="cardHistoryFilter">Filter by transaction type</label>
+                                                <select id="cardHistoryFilter" class="form-control">
+                                                    <option selected>Debit</option>
+                                                    <option>Credit</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group col-9 offset-sm-4 col-sm-6">
+                                                <label class="sr-only" for="searchCardHistoryInput">Search card history</label>
+                                                <input type="text" class="form-control search-input" id="searchCardHistoryInput" placeholder="Enter card id...">
+                                                <span class="search-icon"><i class="lni-magnifier size-sm"></i></span>
+                                            </div>
+
+
+                                        </div>
+
+                                    </form>
+                                </div>
+
+
+                                <div class="card-body">
+
+                                    <div class="card-body-content-wrapper" id="CardHistoryWrapper">
+
+                                        <table class="table table-hover table-no-border">
+                                            <tbody>
+                                            <tr>
+                                                <td><span class="td-title txt-sm txt-dim txt-bold d-block">Transaction id</span>3</td>
+                                                <td><span class="td-title txt-sm txt-dim txt-bold d-block">Card id</span>5567-8876-5467-0099</td>
+                                                <td><span class="td-title txt-sm txt-dim txt-bold d-block">Transaction amount</span>500</td>
+                                                <td><span class="td-title txt-sm txt-dim txt-bold d-block">Transaction date</span>12-12-2019 10:30pm</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="td-title txt-sm txt-dim txt-bold d-block">Transaction id</span>2</td>
+                                                <td><span class="td-title txt-sm txt-dim txt-bold d-block">Card id</span>5567-8876-5467-0099</td>
+                                                <td><span class="td-title txt-sm txt-dim txt-bold d-block">Transaction amount</span>1000</td>
+                                                <td><span class="td-title txt-sm txt-dim txt-bold d-block">Transaction date</span>30-12-2019 08:30am</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="td-title txt-sm txt-dim txt-bold d-block">Transaction id</span>1</td>
+                                                <td><span class="td-title txt-sm txt-dim txt-bold d-block">Card id</span>5567-8876-5467-0099</td>
+                                                <td><span class="td-title txt-sm txt-dim txt-bold d-block">Transaction amount</span>50</td>
+                                                <td><span class="td-title txt-sm txt-dim txt-bold d-block">Transaction date</span>12-1-2020 10:50am</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+
+                                </div>
+                                <div class="card-footer card-footer-custom-default text-center"></div>
+                            </div>
+
+                        </div>
+
+
+                        <div  class="tab-pane fade show active" id="v-pills-new-product" role="tabpanel" aria-labelledby="v-pills-new-product-tab">
+
+                            <div class="card">
+
+                                <div class="card-header card-header-custom-default">
+                                    New product
+                                </div>
+
+
+                                <div class="card-body">
+
+                                    <div class="card-body-content-wrapper" id="newProductFormWrapper">
+
+                                        <form method="post" id="newProductForm">
+
+                                            <div class="section">
+                                                <div class="row">
+                                                    <div class="form-group col-sm-6">
+                                                        <label for="newProductTitle">Product title</label>
+                                                        <input type="text" class="form-control" id="newProductTitle" placeholder="Product title">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="form-group col-md-6">
+                                                        <label for="newProductCategory">Product category</label>
+                                                        <select id="newProductCategory" class="form-control">
+                                                            <option selected>Select category</option>
+                                                            <option>Food</option>
+                                                            <option>Cosmetics</option>
+                                                            <option>Clothing</option>
+                                                            <option>Electronics</option>
+                                                            <option>Computer & gadget</option>
+                                                            <option>Home & kitchen appliances</option>
+                                                            <option>Pet</option>
+                                                            <option>Drugs</option>
+                                                            <option>Application</option>
+                                                            <option>Music & video</option>
+                                                            <option>Service</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="form-group col-sm-6">
+                                                        <label for="newProductPrice">Product price</label>
+                                                        <input type="text" class="form-control" id="newProductPrice" placeholder="Product price">
+                                                    </div>
+
+                                                </div>
+                                                <div class="row">
+                                                    <div class="form-group col-sm-6">
+                                                        <label for="newProductBrand">Product brand</label>
+                                                        <input type="text" class="form-control" id="newProductBrand" placeholder="Product brand">
+                                                    </div>
+
+                                                </div>
+                                                <div class="row">
+                                                    <div class="form-group col-sm-6">
+                                                        <label for="newProductManufacturer">Product manufacturer</label>
+                                                        <input type="text" class="form-control" id="newProductManufacturer" placeholder="Product manufacturer">
+                                                    </div>
+
+                                                </div>
+                                                <div class="row">
+                                                    <div class="form-group col-12">
+                                                        <label for="newProductDescription">Product description</label>
+                                                        <textarea type="text" class="form-control" id="newProductDescription" placeholder="Product description" rows="3"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="form-group col-12">
+                                                        <label for="newProductIngredients">Product ingredients</label>
+                                                        <textarea type="text" class="form-control" id="newProductIngredients" placeholder="Product ingredients" rows="3"></textarea>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="form-group col-12">
+                                                        <label for="newProductNutrition">Product nutrition or value</label>
+                                                        <textarea type="text" class="form-control" id="newProductNutrition" placeholder="Product nutrition or value" rows="3"></textarea>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="form-group col-12">
+                                                        <label for="newProductUsage">Product usage</label>
+                                                        <textarea type="text" class="form-control" id="newProductUsage" placeholder="Product usage" rows="3"></textarea>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="form-group col-12">
+                                                        <label for="newProductConsumerCare">Product consumer care</label>
+                                                        <textarea type="text" class="form-control" id="newProductConsumerCare" placeholder="Product consumer care" rows="3"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="section">
+                                                <div class="section-title">Product variants</div>
+                                                <div class="section-subtitle txt-dim">Only add the variant that doesn't affect the price. Create variant label such as Color and then variants such as Red, Green etc.</div>
+
+                                                <div class="section-content">
+                                                    <div class="row">
+                                                        <div class="form-group col-12">
+                                                            <label for="newProductVariantLabel">Product title</label>
+                                                            <input type="text" class="form-control" id="newProductVariantLabel" placeholder="Product variant label">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="form-group col-3">
+                                                            <label for="newProductVariant1">Product variant1</label>
+                                                            <input type="text" class="form-control" id="newProductVariant1" placeholder="Product variant1">
+                                                        </div>
+                                                        <div class="form-group col-3">
+                                                            <label for="newProductVariant2">Product variant2</label>
+                                                            <input type="text" class="form-control" id="newProductVariant2" placeholder="Product variant2">
+                                                        </div>
+                                                        <div class="form-group col-3">
+                                                            <label for="newProductVariant3">Product variant3</label>
+                                                            <input type="text" class="form-control" id="newProductVariant3" placeholder="Product variant3">
+                                                        </div>
+                                                        <div class="form-group col-3">
+                                                            <label for="newProductVariant4">Product variant4</label>
+                                                            <input type="text" class="form-control" id="newProductVariant4" placeholder="Product variant4">
+                                                        </div>
+                                                        <div class="form-group col-3">
+                                                            <label for="newProductVariant5">Product variant5</label>
+                                                            <input type="text" class="form-control" id="newProductVariant5" placeholder="Product variant5">
+                                                        </div>
+                                                        <div class="form-group col-3">
+                                                            <label for="newProductVariant5">Product variant6</label>
+                                                            <input type="text" class="form-control" id="newProductVariant6" placeholder="Product variant6">
+                                                        </div>
+                                                        <div class="form-group col-3">
+                                                            <label for="newProductVariant7">Product variant7</label>
+                                                            <input type="text" class="form-control" id="newProductVariant7" placeholder="Product variant7">
+                                                        </div>
+                                                        <div class="form-group col-3">
+                                                            <label for="newProductVariant8">Product variant8</label>
+                                                            <input type="text" class="form-control" id="newProductVariant8" placeholder="Product variant8">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+
+                                            <div class="section">
+                                                <div class="section-title">If non-packaged product</div>
+                                                <div class="section-subtitle txt-dim">If the product is not a packaged product and doesn't has a fixed weight then provide selling unit and limits</div>
+
+                                                <div class="section-content">
+                                                    <div class="row">
+                                                        <div class="form-group col-md-6">
+                                                            <label for="newProductSellUnit">Product selling unit</label>
+                                                            <select id="newProductSellUnit" class="form-control">
+                                                                <option selected>Select unit</option>
+                                                                <option>kilogram (kg)</option>
+                                                                <option>gram (gram)</option>
+                                                                <option>lb (pound)</option>
+                                                                <option>Litre (l)</option>
+                                                                <option>millilitre (ml)</option>
+                                                                <option>Packet (pack)</option>
+                                                                <option>Individual (piece)</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="form-group col-sm-6">
+                                                            <label for="newProductMinSellUnit">Minimum selling unit</label>
+                                                            <input type="text" class="form-control" id="newProductMinSellUnit" placeholder="Minimum selling unit">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="form-group col-sm-6">
+                                                            <label for="newProductMaxSellUnit">Maximum selling unit</label>
+                                                            <input type="text" class="form-control" id="newProductMaxSellUnit" placeholder="Maximum selling unit">
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+
+                                            <div class="section">
+                                                <div class="section-title">Packaging information</div>
+                                                <div class="section-subtitle txt-dim">Provide product weight in <b>kg</b> and dimensions in <b>inch</b></div>
+
+                                                <div class="section-content">
+
+                                                    <div class="row">
+                                                        <div class="form-group col-sm-6">
+                                                            <label for="newProductWeight">Procuct weight</label>
+                                                            <input type="text" class="form-control" id="newProductWeight" placeholder="Product weight">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="form-group col-sm-4">
+                                                            <label for="newProductLength">Product length</label>
+                                                            <input type="text" class="form-control" id="newProductLength" placeholder="Product length">
+                                                        </div>
+                                                        <div class="form-group col-sm-4">
+                                                            <label for="newProductWidth">Product width</label>
+                                                            <input type="text" class="form-control" id="newProductWidth" placeholder="Product width">
+                                                        </div>
+                                                        <div class="form-group col-sm-4">
+                                                            <label for="newProductHeight">Product height</label>
+                                                            <input type="text" class="form-control" id="newProductHeight" placeholder="Product height">
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+
+                                            <div class="section">
+                                                <div class="section-title">Optimization</div>
+                                                <div class="section-subtitle txt-dim">This information will help the product to easily reach to it's potential consumers</div>
+
+                                                <div class="section-content">
+
+                                                    <div class="row">
+                                                        <div class="form-group col-12">
+                                                            <label for="newProductRelatedTag">Product related tags</label>
+                                                            <textarea type="text" class="form-control" id="newProductRelatedTag" placeholder="Product related tags" rows="3"></textarea>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="section">
+                                                    <div class="section-title">Target gender</div>
+                                                    <div class="section-subtitle">Check the target gender of the product</div>
+                                                    <div class="section-content">
+                                                        <div class="row">
+                                                            <div class="form-group col-12">
+                                                                <div class="custom-control custom-radio col-12">
+                                                                    <input type="radio" id="targetGenderMale" name="customRadio" class="custom-control-input">
+                                                                    <label class="custom-control-label" for="targetGenderMale">Male</label>
+                                                                </div>
+                                                                <div class="custom-control custom-radio col-12">
+                                                                    <input type="radio" id="targetGenderFemale" name="customRadio" class="custom-control-input">
+                                                                    <label class="custom-control-label" for="targetGenderFemale">Female</label>
+                                                                </div>
+                                                                <div class="custom-control custom-radio col-12">
+                                                                    <input type="radio" id="targetGenderAll" name="customRadio" class="custom-control-input">
+                                                                    <label class="custom-control-label" for="targetGenderAll">All</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="section">
+                                                    <div class="section-title">Age safety</div>
+                                                    <div class="section-subtitle">If checked then the product will be shown only to the adults (18 year+ ).</div>
+                                                    <div class="section-content">
+                                                        <div class="row">
+                                                            <div class="form-group col-12">
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" class="custom-control-input" id="ageSafetyRequired">
+                                                                    <label class="custom-control-label" for="ageSafetyRequired">Age safety required</label>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="section">
+                                                    <div class="section-title">Upload a product photo</div>
+                                                    <div class="section-subtitle">Upload a high resolution prouct photo of minimum 560px width and 560px height.</div>
+                                                    <div class="section-content">
+                                                        <div class="custom-file">
+                                                            <input type="file" class="custom-file-input" id="newProductPhoto">
+                                                            <label class="custom-file-label" for="newProductPhoto">Upload photo</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <button type="submit" class="btn btn-success float-right">Add new product</button>
+
+
+                                            </div>
+
+                                        </form>
+
+                                    </div>
+
+                                </div>
+                                <div class="card-footer card-footer-custom-default text-center"></div>
+                            </div>
+
+                        </div>
+
+
+                        <div  class="tab-pane fade" id="v-pills-product-available" role="tabpanel" aria-labelledby="v-pills-product-available-tab">
+
+                            <div class="card">
+
+                                <div class="card-header card-header-custom-default">
+                                    <form method="post" id="productSearchForm">
+
+                                        <div class="form-row">
+
+                                            <div class="col-3 col-sm-2">
+                                                Available products
+                                            </div>
+
+                                            <div class="form-group col-9 offset-sm-4 col-sm-6">
+                                                <label class="sr-only" for="searchCardHistoryInput">Search card history</label>
+                                                <input type="text" class="form-control search-input" id="searchAvailableProductInput" placeholder="Enter product id or title">
+                                                <span class="search-icon"><i class="lni-magnifier size-sm"></i></span>
+                                            </div>
+
+
+                                        </div>
+
+                                    </form>
+                                </div>
+
+
+                                <div class="card-body">
+
+                                    <div class="card-body-content-wrapper" id="availableProductWrapper">
+
+                                        <div class="order-list-item data-id-container" data-productid="232323">
+
+                                            <div class="dropdown list-item-option">
+                                                <a href="#" class="dropdown-toggle rotate-90 more-option-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                    <i class="lni-more-alt"></i>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <a class="dropdown-item" href="#"><i class="lni-pencil-alt mr-2"></i>Edit</a>
+                                                    <a class="dropdown-item" href="#"><i class="lni-circle-minus mr-2"></i>Hide</a>
+                                                    <a class="dropdown-item" href="#"><i class="lni-trash mr-2"></i>Delete</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="media ">
+
+                                                <div class="align-self-center mr-3">
+                                                    <a class="img-bg list-item-img-bg" href="#productDetailModal" data-toggle="modal">
+                                                        <img class="media-object list-item-img" src="images/product/Turmeric.jpg" alt="Turmeric powder">
+                                                    </a>
+                                                </div>
+
+                                                <div class="media-body">
+                                                    <div class="inline-block-margin-fix mt-0 mb-0">
+                                                        <a class="app-link-style-default list-item-title txt-overflow-ellipsis product-name" href="#productDetailModal" data-toggle="modal" title="Click to see details">Turmeric</a>
+                                                        <div class="list-item-subtitle txt-dim txt-sm txt-overflow-ellipsis sales-num">500 sales</div>
+                                                        <div class="list-item-subtitle txt-dim txt-sm txt-overflow-ellipsis selected-variant">Flavour - Non-flavoured</div>
+                                                        <div class="list-item-subtitle txt-dim txt-sm txt-overflow-ellipsis quantity" data-itemweight=".01">Quantity - 100g</div>
+                                                        <div class="list-item-title txt-overflow-ellipsis list-item-price-txt" data-itemprice="200">৳200</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="card-footer card-footer-custom-default text-center">
+                                    <button type="button" class="btn btn-success">Load more</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- /#page-content-wrapper -->
+
+</div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="src/jquery/jquery.min.js"></script>
+  <script src="src/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menuToggle").click(function(e) {
+      e.preventDefault();
+      $("#bodyWrapper").toggleClass("toggled");
+      $("#menuToggleIcon").toggleClass("menu-icon-toggled");
+    });
+  </script>
+
+</body>
+
+</html>

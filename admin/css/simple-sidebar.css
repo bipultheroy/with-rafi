@@ -1,0 +1,82 @@
+/*.sidebar toggle arrow icon animation*/
+#menuToggle i {
+    display: block;
+    transition: all 0.4s ease;
+}
+
+.menu-icon-toggled {
+    transform: rotateZ(-180deg);
+}
+
+#sidebarMenu > .nav-link{
+    padding: .75rem 1.25rem;
+    border-bottom: 1px solid #d8d8d8;
+}
+#sidebarMenu .nav-link,
+#sidebarMenu .sub-menu .nav .nav-link {
+    color: #242424;
+    font-weight: 500;
+}
+#sidebarMenu .nav-link i{
+  color: #808080;
+}
+
+#sidebarMenu .nav-link:hover,
+#sidebarMenu .sub-menu .nav .nav-link:hover,
+#sidebarMenu .sub-menu .nav .nav-link:hover{
+    background-color: #f8f8f8;
+}
+#sidebarMenu .nav-link:active,
+#sidebarMenu .nav-link:active i,
+#sidebarMenu .nav-link.active,
+#sidebarMenu .nav-link.active i,
+#sidebarMenu .nav-link:focus i,
+#sidebarMenu .nav-link:focus,
+#sidebarMenu .sub-menu .nav .nav-link:active,
+#sidebarMenu .sub-menu .nav .nav-link.active{
+    background-color: #00e000;
+    color: #ffffff;
+}
+#sidebarWrapper {
+  
+    background-color: #ffffff;
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+}
+
+#sidebarWrapper .sidebar-heading {
+    padding: .95rem 1.25rem;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+#sidebarMenu  {
+    width: 15rem;
+}
+
+#pageContentContainer {
+    min-width: 100vw;
+}
+
+#bodyWrapper.toggled #sidebarWrapper {
+    margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebarWrapper {
+      margin-left: 0;
+  }
+
+  #pageContentContainer {
+      min-width: 0;
+      width: 100%;
+  }
+
+  #bodyWrapper.toggled #sidebarWrapper {
+      margin-left: -15rem;
+  }
+}

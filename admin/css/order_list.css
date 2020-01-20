@@ -1,0 +1,93 @@
+.main-panel{
+    padding: 0;
+}
+/*ORDER TAB CONTENT CSS*/
+
+.order-link{
+    display: block;
+    padding: 1rem 0;
+}
+
+/*END - ORDER TAB CONTENT CSS*/
+.order-container{
+    border-top: 1px solid #d8d8d8;
+}
+/*Product showing by list*/
+.order-list-item{
+    position:relative; /*Impotant for shopling list (absolute) option icon*/
+    margin-bottom: 30px;
+}
+/*Show more button to load more content at the bottom*/
+.list-item-option{
+    position: absolute;
+    top: 0;
+    right: -10px;
+}
+
+/*More option icon dropdown*/
+.more-option-icon{
+    display: inline-block;
+    text-decoration: none!important;
+    color: rgba(117,117,117,0.3);
+}
+.more-option-icon:after { content: none } /*to remove the caret icon*/
+.more-option-icon:hover,
+.more-option-icon:active,
+.more-option-icon:focus{
+    color: rgba(117,117,117,0.9);
+}
+
+.list-item-title{
+    max-width: 90%;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 20px;
+}
+.list-item-subtitle{
+    font-size: .875rem;
+    display: block!important; /*Important otherwise will be inlined with title*/
+}
+
+.order-address-info span,
+.order-contact-info span,
+.order-payment-info span {
+    display: block;
+}
+
+/*product media image container*/
+.list-item-img-bg{
+    display: inline-block;
+    height: 120px;
+    width: 120px;
+    -webkit-border-radius: 24px!important;
+    -moz-border-radius: 24px!important;;
+    border-radius: 24px!important;;
+    overflow: hidden!important;
+}
+/*product media image*/
+.list-item-img{
+    width: 122px;
+    height: 122px;
+    object-fit: cover;
+}
+
+.list-item-price-txt{
+    width: 85%;
+    font-size: .875; /*needed since "inline-margin-fix class added to container"*/
+    font-weight: 700;
+    color: inherit;
+    line-height: 30px;
+    overflow: hidden;
+}
+
+
+
+.order-total-container{
+    padding: 15px 0;
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px){
+
+}

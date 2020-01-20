@@ -1,0 +1,143 @@
+.redb{border: 1px solid red;}
+.blueb{border: 1px solid blue;}
+.greenb{border: 1px solid green;}
+html,
+body {
+    height: 100%;
+    min-height: 100%;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8;
+    color: #242424;
+    font-weight: 400;
+    background-color: #fafafa;
+    overflow-x: hidden;
+}
+
+/*Custom table styles*/
+.table-no-border th,
+.table-no-border td{
+    border: none;
+}
+/*Custom table styles*/
+
+
+/*Tab contents wrapper*/
+.page-contents-wrapper{
+    margin: 15px 0;
+}
+
+
+/*Custom utility classes*/
+.color-app-default-green{
+    color: #00e000;
+}
+.txt-dim,
+.color-app-dark-gray{
+    color: #808080;
+}
+
+
+.color-app-light-gray{
+    color: #d8d8d8;
+}
+.color-app-border-default{
+    border-color: #d8d8d8!important;
+}
+.color-app-bg-default-gray{
+    background-color: #fafafa;
+}
+.app-navbar-default{
+    padding: .875rem;
+    background-color: #ffffff;
+}
+.app-link-style-default{
+    color: #242424;
+}
+.app-link-style-default:hover,
+.app-link-style-default:active,
+.app-link-style-default:focus
+{
+    color: #00e000;
+    text-decoration: none;
+}
+/*End of custom utility classes*/
+
+
+/*Other helpful classes*/
+
+.inline-block-margin-fix{
+    font-size: 0;
+}
+.txt-overflow-ellipsis{
+    display: inline-block;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+.txt-sm{
+    font-size: 0.75rem;
+}
+.txt-bold{
+    font-weight: 700;
+}
+.txt-default{
+    color: #333333!important;
+    font-size: .875rem!important;
+    font-weight: 400!important;
+    line-height: 1.5;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+.rotate-90{
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+/*making vertical section*/
+.section{
+    margin-bottom: 2rem;
+}
+/*title of a section like summary in shopping list*/
+.section-title{
+    margin-bottom: .5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 700;
+}
+.section-subtitle{
+    font-size: .75rem;
+    font-weight: 400;
+    line-height: 1.5;
+
+}
+.section-content{
+    margin-top: 2rem;
+}
+
+
+/*End of helpful css classes*/
+
+
+/*Custom card classe*/
+.card-header-custom-default,
+.card-footer-custom-default{
+    background-color: #ffffff;
+}
+/*End of custom card*/
+/*tab search input icon*/
+.search-icon{
+    position: absolute;
+    top: .5rem;
+    right: 1rem;
+    color: rgba(0,0,0,0.3);
+}
+.search-input{
+    padding-right: 2.5rem;
+}
+/*End of tab search input icon*/
+
+/*Used in js*/
+.data-id-container{}
